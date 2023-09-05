@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HorizonBus - Compra e Recarga</title>
+    <link rel="stylesheet" href="/frontend/web.Site/css/style.css">
+    <script src="https://kit.fontawesome.com/1f557c85de.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <img src="/frontend/web.Site/img/logoonibus (1) (1) (1) (1).png" alt="">
+        <nav>
+            <ul>
+                <li><a href="#">Início</a></li>
+                <li><a href="#">Recarga</a></li>
+                <li><a href="#">Compra</a></li>
+            </ul>
+        </nav>
+
+        <button class="botao"><i class="fa-solid fa-bars"></i></button>
+    </header>
+
+    <main>
+        <section class="recarga">
+            <h2>Recarga de Cartão de Passagem</h2>
+            <p>Insira o número do seu cartão e o valor desejado:</p>
+            <form>
+                <input type="text" placeholder="Número do Cartão">
+                <input type="number" placeholder="Valor em Reais">
+                <button type="submit">Recarregar</button>
+            </form>
+        </section>
+
+        <section class="compra">
+            <h2>Compra de Cartão de Passagem</h2>
+            <p>Escolha o tipo de cartão e a quantidade desejada:</p>
+            <form>
+                <select>
+                    <option value="normal">Cartão Normal</option>
+                    <option value="estudante">Cartão de Estudante</option>
+                    <option value="idoso">Cartão de Idoso</option>
+                </select>
+                <input type="CEP" placeholder="CEP">
+                <button type="submit">Comprar</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 HorizonBus. Todos os direitos reservados.</p>
+    </footer>
+    
+</body>
+</html>
