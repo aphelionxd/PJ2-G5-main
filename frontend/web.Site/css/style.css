@@ -1,110 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap');
 
-body{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+*{
+
+    font-family: 'poppins', sans-serif;
 }
 
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
+html, body {
+    height: 100%;
+}
+
+.wrapper {
+    min-height: 100%;
+    position: relative;
 }
 
 header {
-    background-color: #007acc;
-    color: #fff;
-    text-align: center;
-    padding: 20px 0;
-}
-
-img{
-    width: 450px;
-    height: 150px;
-}
-
-.botao{ 
-    margin-right: 1600px;
-    justify-content: center;
-}
-
-nav ul {
-    list-style: none;
-}
-
-nav ul li {
-    display: inline;
-    margin-right: 20px;
-}
-
-/* Estilos para os botões de navegação */
-nav ul li a {
-    display: inline-block;
+    background-color: #d3d3d3;
     padding: 10px 20px;
-    text-decoration: none;
-    background-color: #007acc;
-    color: #fff;
-    border-radius: 5px;
-    transition: transform 0.2s ease; 
-}
-
-
-nav ul li a:hover {
-    transform: translateY(-5px); 
-    background-color: #00518a; 
-}
-
-
-nav a {
-    color: #fff;
-    text-decoration: none;
-}
-
-main {
-    max-width: 800px;
-    margin: 20px auto;
-    padding: 20px;
-    background-color: #fff;
-    border-radius: 5px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-}
-
-section {
-    margin-bottom: 20px;
-    padding: 20px;
-    background-color: #f9f9f9;
-    border-radius: 5px;
-}
-
-form {
-    margin-top: 10px;
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-input,
-select,
-button {
-    margin-bottom: 10px;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+#logo {
+    max-width: 100px;
 }
 
-button {
-    background-color: #007acc;
-    color: #fff;
+#search-bar {
+    flex-grow: 1;
+    margin: 0 20px;
+    position: relative;
+    border-radius: 20px; 
+    background-color:#696969;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+}
+
+#search-input {
+    border: none;
+    outline: none;
+    width: 100%;
+    padding: 5px;
+    background-color: #696969;
+   
+}
+
+.botao button{
+    border-radius: 20px;
+    border: none ;
+    background-color: transparent;
+    font-size: 16px;
+}
+
+.action-button {
+    color: #333131; 
+    padding: 10px 15px; 
+    border: none; 
     cursor: pointer;
-    transition: background-color 0.3s ease;
 }
 
-button:hover {
-    background-color: #00518a;
+.action-button:hover {
+    
+    color: #696969;
 }
 
+
+        .container {
+            
+           background-color: #d3d3d3;
+           position: relative;
+           padding: 20px;
+           text-align: left;
+           margin-bottom: 40px;
+           margin-top: 10px;
+           min-height: 250px;
+           border-radius: 8px;
+           overflow: hidden;
+           display: flex;
+           flex-direction: column;
+           justify-content: center;
+           align-items: center; 
+       }
+
+       .container img{
+        width: 200px;
+        position: absolute;
+        left: 100px;
+        top: 30px;
+    }
+
+    .container a img{
+        width: 200px;
+        position: absolute;
+        left: 1360px;
+    }
+       
+       .title {
+           font-size: 24px;
+           font-weight: bold;
+           text-align: center;
+       }
+       
+       .image {
+          
+           float: left; 
+           margin-right: 20px;
+           border-radius: 10px;
+           margin-bottom: 10px;
+          
+       
+       }
+       
+       .button-container {
+           text-align: center; 
+       }
+       
+       .button {
+           display: inline-block;
+           padding: 10px 20px;
+           background-color:#d3d3d3;
+           color: #000;
+           border: none;
+           border-radius: 10px;
+           text-decoration: none;
+           margin-top: 10px;
+           background-color: #808080;
+       }
+       
+       .button:hover {
+           background-color: #726a6a;
+       }
+       
+       .form {
+           text-align: center; 
+       }
+
+       /*rodapé */
 footer {
-    text-align: center;
-    margin-top: 20px;
-    padding: 10px 0;
-    background-color: #007acc;
-    color: #fff;
+    background-color: #d3d3d3; 
+    color: #000;
+    padding: 20px; 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
 }
+
+
+/*  meio footer */
+.middle-section {
+    text-align: center;
+    padding: 0px 0px 0px 0px; 
+}
+
+
+.middle-section h2 {
+    font-size: 18px; 
+  
+}
+
+.middle-section form {
+    margin-top: 10px; 
+}
+
+
+.middle-section input[type="email"] {
+    width: 100%;
+    padding: 10px; 
+    margin-bottom: 10px; 
+ ;
+   
+}
+/* botão de enviar */
+.middle-section button[type="submit"] {
+    background-color: #808080;
+    color: #fff; 
+    padding: 10px 20px; 
+    border: none;
+    cursor: pointer; 
+}
+
+/* ícone */
+.icones {
+    display: flex;
+    flex-direction: column; 
+    align-items: flex-start;
+    justify-content:space-evenly;
+}
+
+.icones a {
+    text-decoration: none;
+    color: #fff; 
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+

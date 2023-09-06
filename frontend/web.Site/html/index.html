@@ -1,55 +1,89 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HorizonBus - Compra e Recarga</title>
     <link rel="stylesheet" href="/frontend/web.Site/css/style.css">
-    <script src="https://kit.fontawesome.com/1f557c85de.js" crossorigin="anonymous"></script>
+    <title>projeto integrador </title>
 </head>
 <body>
+</head>
+<body>
+    <script src="https://kit.fontawesome.com/1f557c85de.js" crossorigin="anonymous"></script>
+    
     <header>
-        <img src="/frontend/web.Site/img/logoonibus (1) (1) (1) (1).png" alt="">
-        <nav>
-            <ul>
-                <li><a href="#">Início</a></li>
-                <li><a href="#">Recarga</a></li>
-                <li><a href="#">Compra</a></li>
-            </ul>
-        </nav>
-
-        <button class="botao"><i class="fa-solid fa-bars"></i></button>
+    <a href="#"><img id="logo" src="/frontend/web.Site/img/logoonibus (1) (1) (1) (1).png" alt="Logo"></a>
+    <div id="search-bar">
+        <input type="text" id="search-input" placeholder="">
+        <i class="fa-solid fa-magnifying-glass"></i>
+    </div>
+        <div class="botao">
+            <button  class="action-button">Sobre</button>
+            <button class="action-button">Solicitar seu cartão</button>
+            <button class="action-button">Recarga</button>
+        </div>
     </header>
 
-    <main>
-        <section class="recarga">
-            <h2>Recarga de Cartão de Passagem</h2>
-            <p>Insira o número do seu cartão e o valor desejado:</p>
-            <form>
-                <input type="text" placeholder="Número do Cartão">
-                <input type="number" placeholder="Valor em Reais">
-                <button type="submit">Recarregar</button>
-            </form>
-        </section>
+    <!-- Container 1 -->
+    <div class="container"> 
+        <div class="title">Confira nossos horários de transporte</div>
+        <div class="left">
+            <img src="/frontend/web.Site/img/local.png" alt="Foto1" class="image">
+        </div>
+        <div class="right">
+            <a href="link-para-tabela.html" class="button">Tabela</a>
+        </div>
+    </div>
 
-        <section class="compra">
-            <h2>Compra de Cartão de Passagem</h2>
-            <p>Escolha o tipo de cartão e a quantidade desejada:</p>
-            <form>
-                <select>
-                    <option value="normal">Cartão Normal</option>
-                    <option value="estudante">Cartão de Estudante</option>
-                    <option value="idoso">Cartão de Idoso</option>
-                </select>
-                <input type="CEP" placeholder="CEP">
-                <button type="submit">Comprar</button>
-            </form>
-        </section>
-    </main>
+    <!-- Container 2 -->
+    <div class="container">
+        <div class="title">Tenha seu próprio cartão</div>
+        <div class="left">
+           <a href="#"> <img src="/frontend/web.Site/img/card.png" alt="Foto2" class="image"></a>
+        </div>
+        <div class="right">
+            <a href="link-para-pagina-de-cartao.html" class="button">Peça seu cartão</a>
+        </div>
+    </div>
 
+    <!-- Container 3 -->
+    <div class="container">
+        <div class="title">Recarregue você mesmo!</div>
+        <form class="form">
+            <img src="/frontend/web.Site/img/selfservice.png" alt="Auto-Serviço">
+            <label for="identification">Insira sua identificação aqui:</label><br>
+            <input type="text" id="identification" class="input"><br>
+            <label for="amount">Valor:</label><br>
+            <input type="text" id="amount" class="input"><br>
+            <a href="#" class="button">Prosseguir</a>
+        </form>
+    </div>
+
+    <!-- Container 4 -->
+    <div class="container">
+        <div class="title">Sobre Nós</div>
+        <p>
+            O Horizon Bus - Sistema de Passe para Condução (HBS-PC) é um sistema de software completo projetado para simplificar a gestão de passes de ônibus e a cobrança de tarifas no transporte público. Ele oferece registro de passageiros, validação eletrônica de passes, recarga online, e integração com cobrança eletrônica no ônibus. O HBS-PC centraliza o gerenciamento de passes, promove pagamentos eletrônicos e proporciona uma experiência mais conveniente para os passageiros, tornando o transporte público mais eficiente e moderno.
+        </p>
+    </div>
     <footer>
-        <p>&copy; 2023 HorizonBus. Todos os direitos reservados.</p>
+        <div class="left-corner">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3655.1000899125324!2d-45.42846212395094!3d-23.63658631436173!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cd631156f205eb%3A0xaae37706cf52a06d!2sAv.%20Bahia%2C%201739%20-%20Indai%C3%A1%2C%20Caraguatatuba%20-%20SP%2C%2011665-071!5e0!3m2!1spt-BR!2sbr!4v1693945819120!5m2!1spt-BR!2sbr" width="250" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div class="middle-section">
+            <h2>Receba as Novidades!</h2>
+            <form>
+                <input type="email" >
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+        <div class="icones">
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-linkedin"></i>
+        </div>
     </footer>
+
     
 </body>
 </html>
