@@ -98,7 +98,7 @@ header {
     }
        
        .title {
-           font-size: 24px;
+           font-size: 35px;
            font-weight: bold;
            text-align: center;
        }
@@ -196,3 +196,8 @@ footer {
     margin-bottom: 10px;
 }
 
+h6 {
+    position: absolute;
+    text-align: center;
+    margin-left: 70px;
+}

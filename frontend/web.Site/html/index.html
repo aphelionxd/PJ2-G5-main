@@ -16,11 +16,10 @@
     <div id="search-bar">
         <input type="text" id="search-input" placeholder="">
         <i class="fa-solid fa-magnifying-glass"></i>
-    </div>
+    </div> 
         <div class="botao">
-            <button  class="action-button">Sobre</button>
-            <button class="action-button">Solicitar seu cartão</button>
-            <button class="action-button">Recarga</button>
+            <a href="#Sobre"><button class="action-button">Sobre</button></a>
+            <a href="#Recarga"> <button class="action-button">Recarga</button></a>
         </div>
     </header>
 
@@ -51,7 +50,7 @@
         <div class="title">Recarregue você mesmo!</div>
         <form class="form">
             <img src="/frontend/web.Site/img/selfservice.png" alt="Auto-Serviço">
-            <label for="identification">Insira sua identificação aqui:</label><br>
+            <label for="identification" id="Recarga" >Insira sua identificação aqui:</label><br>
             <input type="text" id="identification" class="input"><br>
             <label for="amount">Valor:</label><br>
             <input type="text" id="amount" class="input"><br>
@@ -62,7 +61,7 @@
     <!-- Container 4 -->
     <div class="container">
         <div class="title">Sobre Nós</div>
-        <p>
+        <p id="Sobre">
             O Horizon Bus - Sistema de Passe para Condução (HBS-PC) é um sistema de software completo projetado para simplificar a gestão de passes de ônibus e a cobrança de tarifas no transporte público. Ele oferece registro de passageiros, validação eletrônica de passes, recarga online, e integração com cobrança eletrônica no ônibus. O HBS-PC centraliza o gerenciamento de passes, promove pagamentos eletrônicos e proporciona uma experiência mais conveniente para os passageiros, tornando o transporte público mais eficiente e moderno.
         </p>
     </div>
@@ -73,8 +72,9 @@
         <div class="middle-section">
             <h2>Receba as Novidades!</h2>
             <form>
-                <input type="email" >
+                <input type="email" placeholder="insira o email">
                 <button type="submit">Enviar</button>
+                <h6> &copy;HorizonBusCopyright2023</h6>
             </form>
         </div>
         <div class="icones">
@@ -84,6 +84,7 @@
         </div>
     </footer>
 
+    
     
 </body>
 </html>
