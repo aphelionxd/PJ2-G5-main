@@ -1,0 +1,22 @@
+header {
+    background-color: #d3d3d3;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.tabela {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.img {
+    max-width: 550px;
+    height: auto; 
+    padding-top: 100px;
+}
+
