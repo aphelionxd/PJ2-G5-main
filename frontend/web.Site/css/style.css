@@ -137,7 +137,11 @@ header {
            text-align: center; 
        }
 
-       /*rodapé */
+       .container form ::placeholder{
+           text-align: center;
+       }
+
+
 footer {
     background-color: #d3d3d3; 
     color: #000;
@@ -148,7 +152,6 @@ footer {
 }
 
 
-/*  meio footer */
 .middle-section {
     text-align: center;
     padding: 0px 0px 0px 0px; 
@@ -172,7 +175,7 @@ footer {
  ;
    
 }
-/* botão de enviar */
+
 .middle-section button[type="submit"] {
     background-color: #808080;
     color: #fff; 
@@ -181,7 +184,7 @@ footer {
     cursor: pointer; 
 }
 
-/* ícone */
+
 .icones {
     display: flex;
     flex-direction: column; 

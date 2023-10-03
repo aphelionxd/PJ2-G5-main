@@ -10,9 +10,10 @@
 </head>
 <body>
     <script src="https://kit.fontawesome.com/1f557c85de.js" crossorigin="anonymous"></script>
+    <script src="/frontend/web.Site/js/script.js"></script>
     
     <header>
-    <a href="#"><img id="logo" src="/frontend/web.Site/img/logoonibuspng.png" alt="Logo"></a>
+    <a href="./index.html"><img id="logo" src="/frontend/web.Site/img/logoonibuspng.png" alt="Logo"></a>
     <div id="search-bar">
         <input type="text" id="search-input" placeholder="">
         <i class="fa-solid fa-magnifying-glass"></i>
@@ -23,7 +24,7 @@
         </div>
     </header>
 
-    <!-- Container 1 -->
+
     <div class="container"> 
         <div class="title">Confira nossos horários de transporte</div>
         <div class="left">
@@ -34,31 +35,31 @@
         </div>
     </div>
 
-    <!-- Container 2 -->
+   
     <div class="container">
         <div class="title">Tenha seu próprio cartão</div>
         <div class="left">
            <a href="#"> <img src="/frontend/web.Site/img/card.png" alt="Foto2" class="image"></a>
         </div>
         <div class="right">
-            <a href="link-para-pagina-de-cartao.html" class="button">Peça seu cartão</a>
+            <a href="/frontend/web.Site/html/Pedircartão.html" class="button" id="Recarga">Peça seu cartão</a>
         </div>
     </div>
 
-    <!-- Container 3 -->
+  
     <div class="container">
         <div class="title">Recarregue você mesmo!</div>
         <form class="form">
             <img src="/frontend/web.Site/img/selfservice.png" alt="Auto-Serviço">
-            <label for="identification" id="Recarga" >Insira sua identificação aqui:</label><br>
-            <input type="text" id="identification" class="input"><br>
+            <label for="identification">Insira sua identificação aqui:</label><br>
+            <input type="text" id="identification" placeholder="CPF" class="input"><br>
             <label for="amount" >Valor:</label><br>
             <input type="text" id="amount" class="input"><br>
             <a href="#" class="button">Prosseguir</a>
         </form>
     </div>
 
-    <!-- Container 4 -->
+
     <div class="container">
         <div class="title">Sobre Nós</div>
         <p id="Sobre">
@@ -84,7 +85,6 @@
         </div>
     </footer>
 
-    
     
 </body>
 </html>
