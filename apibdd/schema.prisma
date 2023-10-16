@@ -1,0 +1,57 @@
+// schema.prisma
+generator client {
+  provider = "prisma-client-js"
+  output   = "./src/prisma/client"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = "file:./projetointegrador.sql"
+}
+
+model Usuario {
+  id     Int    @id @map("id")
+  nome   String @map("nome")
+  email  String @map("email")
+  senha  String @map("senha")
+  token  String @map("token")
+}
+
+model Cliente {
+  id                   Int      @id @map("id")
+  nome                 String   @map("nome")
+  saldo                Decimal  @map("saldo")
+  cpf                  String   @map("cpf")
+  cadastradoUsuario_id Int      @map("cadastrado_usuario_id")
+  usuario              Usuario  @relation(fields: [cadastradoUsuario_id], references: [id])
+}
+
+model Linha {
+  id          Int      @id @map("id")
+  inicio      DateTime @map("inicio")
+  fim         DateTime @map("fim")
+  localinicio String   @map("localinicio")
+  localfim    String   @map("localfim")
+}
+
+model Viagem {
+  id          Int      @id @map("id")
+  data        DateTime @map("data")
+  linha_id    Int      @map("linha_id")
+  motorista_id Int      @map("motorista_id")
+  onibus_id  Int      @map("onibus_id")
+  linha       Linha    @relation(fields: [linha_id], references: [id])
+  motorista   Motorista @relation(fields: [motorista_id], references: [id])
+  onibus     Onibus   @relation(fields: [onibus_id], references: [id])
+}
+
+model Motorista {
+  id   Int    @id @map("id")
+  nome String @map("nome")
+  foto String @map("foto")
+}
+
+model Onibus {
+  id    Int    @id @map("id")
+  placa String @map("placa")
+}
