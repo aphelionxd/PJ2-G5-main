@@ -1,13 +1,8 @@
-// schema.prisma
-generator client {
-  provider = "prisma-client-js"
-  output   = "./src/prisma/client"
+datasource db {
+  provider = "mysql"
+  url      = "mysql://localhost:3307/projetointegrador"
 }
 
-datasource db {
-  provider = "sqlite"
-  url      = "file:./projetointegrador.sql"
-}
 
 model Usuario {
   id     Int    @id @map("id")
@@ -15,6 +10,7 @@ model Usuario {
   email  String @map("email")
   senha  String @map("senha")
   token  String @map("token")
+  cliente Cliente[]
 }
 
 model Cliente {
@@ -32,6 +28,7 @@ model Linha {
   fim         DateTime @map("fim")
   localinicio String   @map("localinicio")
   localfim    String   @map("localfim")
+  viagem     Viagem[]
 }
 
 model Viagem {
@@ -49,9 +46,11 @@ model Motorista {
   id   Int    @id @map("id")
   nome String @map("nome")
   foto String @map("foto")
+  viagem Viagem[]
 }
 
 model Onibus {
   id    Int    @id @map("id")
   placa String @map("placa")
+  viagem Viagem[]
 }
